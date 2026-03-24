@@ -124,6 +124,7 @@ resources:
 config:
   nodeEnv: developement
   logLevel: debug
+  appPort: 3000
 
 # -- Base de données
 postgresql:

@@ -124,6 +124,7 @@ resources:
 config:
   nodeEnv: production
   logLevel: warn
+  appPort: "3000"
 
 # -- Base de données
 postgresql:

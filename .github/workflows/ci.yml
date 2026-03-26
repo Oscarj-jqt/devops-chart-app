@@ -50,3 +50,14 @@ jobs:
           scan-ref: 'infra/'
           severity: 'HIGH,CRITICAL'
           exit-code: '0'  # Warning only pour IaC
+
+      # Scanner les secrets dans le code
+      - name: Scan for secrets
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+
+            
+    
